@@ -44,7 +44,7 @@ function handleError(error) {
 
 function errorMsg(msg, error) {
     const errorElement = document.querySelector('#errorMsg');
-    errorElement.innerHTML += `<p>${msg}</p>`;
+    errorElement.innerHTML += `<p>${msg} ${error}</p>`;
     if (typeof error !== 'undefined') {
         console.error(error);
     }
