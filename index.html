@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="WebRTC">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+    <base target="_blank">
+    <title>UI</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        video{
+            height: 100%;
+            width: auto;
+        }
+        div{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: red;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+
+    <video id="gum-local" autoplay playsinline></video>
+    <div id="errorMsg"></div>
+    <script src="adapter-latest.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
