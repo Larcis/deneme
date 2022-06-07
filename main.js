@@ -39,7 +39,7 @@ function handleError(error) {
             'you need to allow the page access to your devices in ' +
             'order for the demo to work.');
     }
-    errorMsg(`getUserMedia error: ${error.name}`, error);
+    errorMsg(`getUserMedia error: `, error);
 }
 
 function errorMsg(msg, error) {
@@ -61,7 +61,6 @@ async function init() {
     try {
         const stream = await navigator.mediaDevices.getUserMedia(constraints);
         handleSuccess(stream);
-        e.target.disabled = true;
     } catch (e) {
         handleError(e);
     }
