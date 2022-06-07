@@ -15,7 +15,7 @@ function handleSuccess(stream) {
         const step = stride * capabilitie.step;
         function applyCap(val) {
             try {
-                track.cameraTrack.applyConstraints({ advanced: [{ "zoom": val }] })
+                track.applyConstraints({ advanced: [{ "zoom": val }] })
             } catch (e) {
                 console.log(e);
             }
